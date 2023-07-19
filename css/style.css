@@ -23,8 +23,8 @@
     --bigger-font-size: 1.5rem;
     --biggest-font-size: 2rem;
     --h2-font-size: 1.25rem;
-    --normaml-font-size: 0.938rem;
-    --samller-font-size: 0.813rem;
+    --normal-font-size: 0.938rem;
+    --smaller-font-size: 0.813rem;
 
     /* Margenes */
     --mg-1: .5rem;
@@ -39,4 +39,78 @@
 
     /* Rotate img */
     --rotate-img: rotate(-30deg);
+}
+
+@media screen and (min-width: 768px){
+    :root{
+    --big-font-size: 1.5rem;
+    --bigger-font-size: 2rem;
+    --biggest-font-size: 3rem;
+    --normal-font-size: 1rem;
+    --smaller-font-size: 0.875rem;
+    }
+
+    /* BASE */
+    *, ::before,::after{
+        box-sizing: border-box;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        margin: var(--header-height) 0 0 0;
+        font-family: var(--body-font);
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-medium);
+        color: var(--dark-color);
+        line-height: 1.6;
+    }
+
+    h1, h2, h3, h4, ul{
+        margin: 0;
+    }
+    ul{
+        padding: 0;
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        color: var(--dark-color);
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    /* CLASS CSS */
+    .section{
+        padding: 5rem 0 2rem;
+    }
+
+    .section-title{
+        position: relative;
+        font-size: var(--big-font-size);
+        margin-bottom: var(--mg-4);
+        text-align: center;
+        letter-spacing: .1rem;
+    }
+
+    .section-title::after{
+        content: '';
+        position: absolute;
+        width: 56px;
+        height: .18rem;
+        top: -1rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: var(--dark-color);
+    }
+
+    /* LAYOUT */
+    
+    /* NAV */
+    /* Show Menu */
+    /* Change Color Header */
+    /* HOME */
 }
